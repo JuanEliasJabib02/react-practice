@@ -1,27 +1,32 @@
-# React + TypeScript + Vite
+# React Todo List Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this challenge, you'll create a todo list in a React application. Users will have the following capabilities:
 
-Currently, two official plugins are available:
+- Add new tasks to the list.
+- Mark tasks as completed.
+- Delete tasks from the list.
+- Filter tasks to view only pending or completed tasks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requirements
 
-## Expanding the ESLint configuration
+To complete this challenge, you should:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Utilize `useState` to manage the state of the task list and its status (pending or completed).
+- Use `useRef` to retrieve the value from the new task input field.
+- Apply `useEffect` to update the task list or apply filters.
+- Implement functions for adding, marking as completed, and deleting tasks.
+- Optimize the task deletion function using `useCallback`.
+- Style the todo list and buttons with CSS according to your preference.
+- Add filter options to view pending or completed tasks.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+To get started with this challenge, you can clone the repository and run the following commands:
+
+```bash
+# Install dependencies using Yarn
+yarn install
+
+# Run the development server
+yarn start
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
